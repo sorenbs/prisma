@@ -200,6 +200,7 @@ export function fieldToColumnType(fieldTypeId: number): ColumnType {
       return ColumnTypeEnum.Uuid
     case ScalarColumnType.OID:
       return ColumnTypeEnum.Int64
+    case 19: // NAME type (alias for varchar(64))
     case ScalarColumnType.BPCHAR:
     case ScalarColumnType.TEXT:
     case ScalarColumnType.VARCHAR:
